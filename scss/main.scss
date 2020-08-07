@@ -1,0 +1,54 @@
+// Variables
+$secondary: #034591;
+$primary: #008f11;
+$text-black:#000;
+// $border-radius:0;
+// $border-radius-sm: 0;
+// $border-radius-lg:0;
+
+// Utilities
+$utilities:() !default;
+$utilities:map-merge(('input-padding':(property:padding,
+            class:ip,
+            values:(0:0,
+                1:0.3rem,
+                2:0.5rem,
+                3:0.7rem,
+                4:0.9rem,
+                5:1rem,
+            ),
+        ),
+    ),
+    $utilities);
+
+@import 'config';
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+.showcase-img {
+    background: url(../img/birdview.jpg);
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.about {
+    color: $text-black;
+}
+
+.search-icon {
+    color: $primary;
+}
+
+header a,
+.nav a {
+    text-decoration: none;
+}
+
+.blog-header-logo {
+    transition: all 1s ease;
+}
+
+.blog-header-logo img:hover {
+    width: 65px;
+    height: 65px;
+    transition: all 1s ease;
+}
